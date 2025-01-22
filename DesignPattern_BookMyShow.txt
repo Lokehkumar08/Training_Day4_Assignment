@@ -1,0 +1,25 @@
+BookMyShow
+
+1. User Authentication
+Singletion : We only need one instance of the session manager 
+that tracks user sessions during the app's lifecycle.
+
+Factory: For creating different types of authentication methods 
+(ex : social login, password-based login)
+
+2. Movie/Event Search
+Composite: where movies and events are grouped under various categories (ex : genre, city, language).
+
+3. Seat Selection
+Command: Selecting seats and booking tickets can be encapsulated as Command objects, 
+which represent the various actions (selecting a seat, canceling a booking, updating booking).
+
+4. Payment Process
+Strategy: The payment gateway (ex: credit card, PayPal, UPI, wallet) 
+can be selected dynamically through the Strategy pattern.
+
+5. Notifying / Order Confirmation
+Observer: Once the payment is successful, the system uses the Observer pattern to notify different modules 
+(ex: user account, booking history) that the transaction was successful.
+
+
